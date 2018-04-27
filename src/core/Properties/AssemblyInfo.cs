@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Dimenics")]
-[assembly: AssemblyProduct("Dime.Utilities.Identity")]
+[assembly: AssemblyProduct("Dime.Identity")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
