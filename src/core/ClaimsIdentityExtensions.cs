@@ -47,7 +47,7 @@ namespace System.Security.Claims
         {
             ClaimsIdentity identity = currentPrincipal.Identity as ClaimsIdentity;
             Claim claim = identity?.Claims.First(c => c.Type == key);
-            return claim?.Value;
+            return claim.Value;
         }
     }
 }
