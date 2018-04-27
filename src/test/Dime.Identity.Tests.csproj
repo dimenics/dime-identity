@@ -10,9 +10,8 @@
   <PropertyGroup>
     <Authors>Dimenics</Authors>
     <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
-    <AssemblyName>Dime.Utilities.Identity</AssemblyName>
+    <AssemblyName>Dime.Identity.Tests</AssemblyName>
     <PackageId>Dime.Identity.Tests</PackageId>
-    <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp1.1' ">1.1.1</RuntimeFrameworkVersion>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
