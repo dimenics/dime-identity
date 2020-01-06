@@ -1,6 +1,4 @@
-﻿using System.Security.Claims;
-
-namespace Dime.Identity
+﻿namespace System.Security.Claims
 {
     /// <summary>
     /// Allows for easy assembling claims for ClaimsIdentity with a fluent interface

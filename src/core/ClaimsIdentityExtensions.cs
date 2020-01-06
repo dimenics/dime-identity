@@ -40,6 +40,18 @@ namespace System.Security.Claims
         /// <summary>
         ///
         /// </summary>
+        /// <param name="identity"></param>
+        /// <param name="roleClaimType"></param>
+        /// <returns></returns>
+        public static bool IsInRole(this ClaimsIdentity identity, string roleClaimType)
+        {
+            IEnumerable<string> userRoles = identity.GetUserClaims<string>(ClaimTypes.Role);
+            return userRoles.Contains(roleClaimType);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
         /// <param name="currentPrincipal"></param>
         /// <param name="key"></param>
         /// <returns></returns>

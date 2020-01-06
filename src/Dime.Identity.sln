@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2015
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Identity", "core\Dime.Identity.csproj", "{335C92D3-BAD5-446F-AA54-2AFF0E219936}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Security", "core\Dime.Security.csproj", "{335C92D3-BAD5-446F-AA54-2AFF0E219936}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F69E776C-C062-4370-BD1E-935ACE60198E}"
 EndProject
