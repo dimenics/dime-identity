@@ -1,6 +1,6 @@
 # Dime.Security
 
-[![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/Identity%20-%20MAIN%20-%20CI?branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=87&branchName=master)
+[![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/Identity%20-%20MAIN%20-%20CI?branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=87&branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/152/master)
 
 ## Introduction
 
@@ -26,10 +26,10 @@ Extensions to the System.Security namespace:
 
 ## Installation
 
-Use the package manager NuGet to install Dime.Security:
+Use the package manager NuGet to install Dime.Identity:
 
-- dotnet cli: `dotnet add package Dime.Security`
-- Package manager: `Install-Package Dime.Security`
+- dotnet cli: `dotnet add package Dime.Identity`
+- Package manager: `Install-Package Dime.Identity`
 
 ## Usage
 
@@ -44,9 +44,10 @@ public string GetUserTimeZone(ClaimsIdentity currentUser)
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
+
+Pull requests are welcome. Please check out the contribution and code of conduct guidelines.
 
 ## License
 
-MIT
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
