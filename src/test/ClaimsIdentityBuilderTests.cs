@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Security.Claims;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -8,7 +9,7 @@ namespace Dime.Identity.Tests
     public class ClaimsIdentityBuilderTests
     {
         [TestMethod]
-        public void ClaimsIdentityBuilder_WithId_SetsClaim()
+        public void ClaimsIdentityBuilder_WithId_ShouldSetClaim()
         {
             ClaimsIdentityBuilder builder = new ClaimsIdentityBuilder();
             ClaimsIdentity claimsIdentity = builder.WithId(250).Build();
@@ -17,16 +18,26 @@ namespace Dime.Identity.Tests
         }
 
         [TestMethod]
-        public void ClaimsIdentityBuilder_WithName_SetsClaim()
+        public void ClaimsIdentityBuilder_WithName_ShouldSetClaim()
         {
             ClaimsIdentityBuilder builder = new ClaimsIdentityBuilder();
             ClaimsIdentity claimsIdentity = builder.WithName("Handsome B. Wonderful").Build();
 
-            Assert.IsTrue(claimsIdentity.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value == "Handsome B. Wonderful");
+            string name = claimsIdentity.Claims.First(x => x.Type == ClaimTypes.Name).Value;
+            Assert.IsTrue(name == "Handsome B. Wonderful");
         }
 
         [TestMethod]
-        public void ClaimsIdentityBuilder_WithLocale_SetsClaim()
+        public void ClaimsIdentityBuilder_WithName_CallsWrongClaim_ShouldThrowInvalidOperationException()
+        {
+            ClaimsIdentityBuilder builder = new ClaimsIdentityBuilder();
+            ClaimsIdentity claimsIdentity = builder.WithName("Handsome B. Wonderful").Build();
+
+            Assert.ThrowsException<InvalidOperationException>(() => claimsIdentity.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value);
+        }
+
+        [TestMethod]
+        public void ClaimsIdentityBuilder_WithLocale_ShouldSetClaim()
         {
             ClaimsIdentityBuilder builder = new ClaimsIdentityBuilder();
             ClaimsIdentity claimsIdentity = builder.WithLocale("America/Cancun").Build();
@@ -35,7 +46,7 @@ namespace Dime.Identity.Tests
         }
 
         [TestMethod]
-        public void ClaimsIdentityBuilder_WithRole_SetsClaim()
+        public void ClaimsIdentityBuilder_WithRole_ShouldSetClaim()
         {
             ClaimsIdentityBuilder builder = new ClaimsIdentityBuilder();
             ClaimsIdentity claimsIdentity = builder.WithRole("Admin").Build();
@@ -44,10 +55,10 @@ namespace Dime.Identity.Tests
         }
 
         [TestMethod]
-        public void ClaimsIdentityBuilder_With_SetsClaim()
+        public void ClaimsIdentityBuilder_With_ShouldSetClaim()
         {
             ClaimsIdentityBuilder builder = new ClaimsIdentityBuilder();
-            ClaimsIdentity claimsIdentity = builder.With("CustomClaim","CustomValue").Build();
+            ClaimsIdentity claimsIdentity = builder.With("CustomClaim", "CustomValue").Build();
 
             Assert.IsTrue(claimsIdentity.Claims.First(x => x.Type == "CustomClaim").Value == "CustomValue");
         }

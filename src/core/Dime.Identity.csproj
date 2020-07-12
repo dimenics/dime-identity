@@ -9,9 +9,9 @@
 
   <PropertyGroup>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
-    <AssemblyName>Dime.Security</AssemblyName>
-    <PackageId>Dime.Security</PackageId>
+    <TargetFrameworks>netstandard2.1;netstandard2.0;net461</TargetFrameworks>
+    <AssemblyName>Dime.Identity</AssemblyName>
+    <PackageId>Dime.Identity</PackageId>
     <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -21,7 +21,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description>Extensions to the System.Security namespace.</Description>
-    <Version>1.0.1-alpha.1</Version>
+    <Version>1.0.1-alpha.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
