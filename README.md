@@ -1,6 +1,6 @@
 # Dime.Security
 
-[![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/Identity%20-%20MAIN%20-%20CI?branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=87&branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/152/master)
+![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.identity?branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/152/master)
 
 ## Introduction
 
